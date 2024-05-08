@@ -8,10 +8,11 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
+    origin: "https://new-form-frontend.vercel.app",
     credentials: true,
     methods:["POST","GET"]
-    origin: "https://new-form-frontend.vercel.app",
-  })
+    
+  allowedHeaders: ['Content-Type', 'Authorization']
 );
 dotenv.config();
 app.get("/", (req, res) => {
