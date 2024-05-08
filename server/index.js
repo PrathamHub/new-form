@@ -10,7 +10,7 @@ app.use(
   cors({
     origin: "https://new-form-frontend.vercel.app",
     credentials: true,
-    methods:["POST","GET"]
+    methods:["POST","GET"],
     
   allowedHeaders: ['Content-Type', 'Authorization']
 );
