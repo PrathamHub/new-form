@@ -10,11 +10,10 @@ app.use(
   cors({
     origin: "https://new-form-frontend.vercel.app",
     credentials: true,
-    methods:["POST","GET"],
-    
-  allowedHeaders: ['Content-Type', 'Authorization']
-  });
-)
+    methods: ["POST", "GET"],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  })
+);
 dotenv.config();
 app.get("/", (req, res) => {
   res.send("On /");
