@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: "https://new-form-frontend.vercel.app/",
+    origin: "https://new-form-frontend.vercel.app",
   })
 );
 dotenv.config();
