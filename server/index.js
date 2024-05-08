@@ -14,6 +14,7 @@ app.use(
     
   allowedHeaders: ['Content-Type', 'Authorization']
   });
+)
 dotenv.config();
 app.get("/", (req, res) => {
   res.send("On /");
