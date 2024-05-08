@@ -30,7 +30,7 @@ const Form = () => {
         address,
         skills,
       });
-      alert("registration Successfull");
+     
     } catch (error) {
       console.log(error);
       console.log("Registration Unsuccessfull");
